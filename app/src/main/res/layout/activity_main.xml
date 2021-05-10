@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/backg">
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:background="@drawable/my_border8"
+            android:onClick="folders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+            <ImageView
+                android:background="@drawable/my_border"
+                android:layout_marginTop="30dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+
+                android:src="@drawable/ic_baseline_ondemand_video_24"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Video"
+                android:textColor="#fff"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="45dp"
+                android:textStyle="bold"
+                android:textSize="25dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/my_border8"
+            android:onClick="gallery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+            <ImageView
+                android:background="@drawable/my_border1"
+                android:layout_marginTop="30dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_baseline_image_24"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gallery"
+                android:textColor="#fff"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="45dp"
+                android:textStyle="bold"
+                android:textSize="25dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:onClick="slideShow"
+            android:background="@drawable/my_border8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+            <ImageView
+                android:background="@drawable/my_border2"
+                android:layout_marginTop="30dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_baseline_folder_open_24"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Slideshow Maker"
+                android:textColor="#fff"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="45dp"
+                android:textStyle="bold"
+                android:textSize="25dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:onClick="setting"
+            android:background="@drawable/my_border8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+            <ImageView
+                android:background="@drawable/my_border3"
+                android:layout_marginTop="30dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_baseline_settings_24"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Setting"
+                android:textColor="#fff"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="45dp"
+                android:textStyle="bold"
+                android:textSize="25dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp">
+
+        <ImageView
+            android:layout_marginHorizontal="24dp"
+            android:layout_weight="1"
+            android:onClick="share"
+            android:background="@drawable/my_border4"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_baseline_share_24"/>
+
+        <ImageView
+            android:layout_marginHorizontal="24dp"
+            android:layout_weight="1"
+            android:onClick="rateUs"
+            android:background="@drawable/my_border5"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_baseline_star_rate_24"/>
+
+        <ImageView
+            android:layout_marginHorizontal="24dp"
+            android:layout_weight="1"
+            android:onClick="aboutUs"
+            android:background="@drawable/my_border6"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_baseline_supervised_user_circle_24"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Share"
+            android:textColor="#ffff"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rate Us"
+            android:textColor="#ffff"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="About Us"
+            android:textColor="#ffff"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="300dp"
+    android:layout_height="450dp"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Author"/>
+
+    <TextView
+        android:gravity="center"
+        android:textColor="#3CE4CC"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HDP Solution"/>
+
+    <TextView
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pivacy Policy"/>
+
+    <TextView
+        android:gravity="center"
+        android:textColor="#3CE4CC"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="http://hdpsolution.com/privacy_policy/"/>
+    <TextView
+        android:gravity="center"
+        android:textColor="#3CE4CC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="StatusQuotes.htm"/>
+
+
+    <TextView
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email"/>
+
+    <TextView
+        android:gravity="center"
+        android:textColor="#3CE4CC"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="abc@gmail.com"/>
+
+    <Button
+        android:id="@+id/btn_dimiss"
+        android:layout_marginTop="25dp"
+        android:layout_width="53dp"
+        android:layout_height="40dp"
+        android:layout_gravity="right"
+        android:text="OK" />
+
+</LinearLayout>
