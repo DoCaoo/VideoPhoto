@@ -14,6 +14,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.util.Log;
 import android.widget.Toast;
 
 import com.example.videophoto.adapter.AdapterVideoList;
@@ -109,14 +110,12 @@ public class SelectVideoActivity extends AppCompatActivity {
                     int idColumn = cursor.getColumnIndexOrThrow(MediaStore.Video.Media._ID);
                     int titleColumn = cursor.getColumnIndexOrThrow(MediaStore.Video.Media.DISPLAY_NAME);
                     int durationColumn = cursor.getColumnIndexOrThrow(MediaStore.Video.Media.DURATION);
-
                     while (cursor.moveToNext()) {
                         long id = cursor.getLong(idColumn);
                         String title = cursor.getString(titleColumn);
                         int duration = cursor.getInt(durationColumn);
-
                         Uri data = ContentUris.withAppendedId(MediaStore.Video.Media.EXTERNAL_CONTENT_URI, id);
-
+                        Log.e("AAAAAAA:",data+"");
                         String duration_formatted;
                         int sec = (duration / 1000) % 60;
                         int min = (duration / (1000 * 60)) % 60;
